@@ -1,0 +1,7 @@
+name: SAntiBot
+version: '${project.version}'
+main: me.skully.santibot.Main
+authors: [ skully ]
+website: skully.space
+commands:
+  santibot:
