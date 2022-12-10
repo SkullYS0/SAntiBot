@@ -20,8 +20,9 @@ public class SAntiBotCommand implements CommandExecutor {
             sender.sendMessage("§bSAntiBot §7| §fПлагин был §aуспешно §fперезапущен!");
             return true;
         }else if(args[0].equalsIgnoreCase("add")){
-            Main.getInstance().getConfig().getStringList("bots.nicks").add(args[1]);
+            Main.getInstance().getConfig().addDefault("bots.nicks", args[1]);
             sender.sendMessage("§bSAntiBot §7| §fНикнейм §a" +args[1]+ " был §aуспешно §fдобавлен в память сервера");
+            Main.getInstance().reloadConfig();
             return true;
         }
 

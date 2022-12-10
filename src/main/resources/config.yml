@@ -8,6 +8,8 @@
 #
 #    АВТОР ПЛАГИНА - skully [ https://skully.space ]
 #
+#     ПО ПОВОДУ БАГОВ ПИСАТЬ - https://tg.skully.space
+#
 bots:
   nicks:
     - "Evolution"
@@ -18,10 +20,19 @@ bots:
 messages:
   telegram:
     bot: "❗️❗️❗️ Замечена бот атака❗️❗️❗️%0AС ником 🤖%bot%🤖%0AЗабанен был 💥%nick%💥%0AС любовью SAntiBot♥️"
+    chat-start: "❗️❗️❗️ Замечена чат атака❗️❗️❗️%0AС ником 🤖%player%🤖%0AСообщение 💥%message%💥%0AС любовью SAntiBot♥️"
+    chat-end: "❗️❗️❗️ Замечена бот атака❗️❗️❗️🤖%0AНаказан был 💥%player%💥%0AС любовью SAntiBot♥️"
+
+
+chat:
+  max-messages: 5
+  command: "op %player%"
 
 telegram:
   alert:
     name: true
+    chat-start: true
+    chat-end: true
   bot:
     token: "СЮДА ВАШ ТОКЕН ОТ BotFather"
     ids:

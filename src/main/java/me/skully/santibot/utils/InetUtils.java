@@ -39,10 +39,8 @@ public class InetUtils {
         while ((inputLine = in.readLine()) != null) {
             response.append(inputLine);
         }
+        con.disconnect();
         in.close();
-
-        // Распечатываем результат
-        System.out.println(response.toString());
 
     }
 
